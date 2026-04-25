@@ -80,16 +80,6 @@ plt.plot(data['sales_log'], label='Log Transformation')
 plt.legend()
 plt.title('Log Transformation')
 
-plt.subplot(6,1,5)
-plt.plot(data['sales_log_diff'], label='Log + Difference')
-plt.legend()
-plt.title('Log Transformation + Differencing')
-
-plt.subplot(6,1,6)
-plt.plot(data['sales_log_seasonal_diff'], label='Final Stationary Data')
-plt.legend()
-plt.title('Log + Differencing + Seasonal')
-
 plt.tight_layout()
 plt.show()
 data.plot(kind='line', figsize=(12,6))
